@@ -1,0 +1,143 @@
+.root {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Brushter';
+  src: url('/assets/font/brushter/Brushter.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('/assets/font/proxiNova/ProximaNova-Regular.ttf') format('truetype');
+}
+
+.flex {
+  display: flex;
+}
+
+.styledUnverifie {
+  background-color: rgb(255, 78, 83);
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+
+.styledStrategies {
+  background-image: url('assets/unverified.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex: 1;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.styledUnverifieFont {
+  font-family: 'ProximaNova', sans-serif;
+  font-size: 94px;
+  line-height: 101px;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0 0 0 auto;
+  max-width: 430px;
+  height: 208px;
+}
+
+.styledEleminatedFont {
+  font-family: 'Brushter', sans-serif;
+  font-size: 93px;
+  line-height: 10rem;
+  color: #FFFFFF;
+}
+
+.styledStrategiesFont {
+  font-family: 'ProximaNova', sans-serif;
+  font-size: 94px;
+  line-height: 101px;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 430px;
+  height: 208px;
+}
+
+.styledStrategiesSubFont {
+  font-family: 'ProximaNova', sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  max-width: 422px;
+  color: #FFFFFF;
+  margin: 75px 0px 64px 38px;
+}
+
+.styledStrategiesList {
+  flex-direction: column;
+  gap: 32px;
+  max-width: 422px;
+  margin: 0px 0px 72px 38px
+}
+
+.styledStrategiesListText {
+  font-family: 'ProximaNova', sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.styledStrategiesListItem {
+  gap: 20px
+}
+
+.listIcone {
+  min-width: 24px;
+  height: 24px;
+}
+
+@media only screen and (max-width:992px) {
+
+  .styledUnverifieFont,
+  .styledStrategiesFont,
+  .styledEleminatedFont {
+    font-size: 56px;
+    line-height: 60px;
+    max-width: 249px;
+    height: 126px;
+  }
+
+  .styledStrategiesSubFont {
+    font-size: 8px;
+    line-height: 14px;
+    max-width: 213px;
+    margin: 42px 0px 38px 26px;
+  }
+
+  .styledStrategiesList {
+    max-width: 213px;
+    gap: 12px;
+    margin: 0px 0px 42px 26px;
+  }
+
+  .styledStrategiesListText {
+    font-size: 8px;
+    line-height: 14px;
+  }
+
+  .styledStrategiesListItem {
+    gap: 8px
+  }
+
+  .listIcone {
+    min-width: 12px;
+    height: 12px;
+  }
+}
+
+@media only screen and (max-width:600px) {
+
+  .styledUnverifieFont,
+  .styledStrategiesFont,
+  .styledEleminatedFont {
+    font-size: 32px;
+    line-height: 35px;
+    max-width: 150px;
+    height: 72px;
+  }
+}
