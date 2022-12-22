@@ -16,50 +16,58 @@
   display: flex;
 }
 
-.styledUnverifie {
+.strategies-wrapper {
+  position: relative;
+ }
+
+.left-strategies-box {
   background-color: rgb(255, 78, 83);
   flex: 1;
   flex-direction: column;
   justify-content: center;
-  padding: 10px;
 }
 
-.styledStrategies {
+.right-strategies-box {
   background-image: url('assets/unverified.png');
   background-repeat: no-repeat;
   background-size: cover;
   flex: 1;
   flex-direction: column;
-  padding: 10px;
+  justify-content: space-between;
+  gap: 220px;
 }
 
-.styledUnverifieFont {
+.strategies-container {
+  position: absolute;
+  inset: 0px;
+  display: flex;
+  width: max-content;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  margin: 0px auto;
+}
+
+.strategies-font {
   font-family: 'ProximaNova', sans-serif;
   font-size: 94px;
   line-height: 101px;
   color: rgba(255, 255, 255, 0.7);
-  margin: 0 0 0 auto;
-  max-width: 430px;
-  height: 208px;
+  margin: 0px;
+  padding: 0px;
 }
 
-.styledEleminatedFont {
+.eleminated-font {
   font-family: 'Brushter', sans-serif;
   font-size: 93px;
-  line-height: 10rem;
+  line-height: 160px;
   color: #FFFFFF;
+  margin: 0px;
+  padding: 0px;
 }
 
-.styledStrategiesFont {
-  font-family: 'ProximaNova', sans-serif;
-  font-size: 94px;
-  line-height: 101px;
-  color: rgba(255, 255, 255, 0.7);
-  max-width: 430px;
-  height: 208px;
-}
 
-.styledStrategiesSubFont {
+.strategies-sub-font {
   font-family: 'ProximaNova', sans-serif;
   font-size: 16px;
   line-height: 26px;
@@ -68,76 +76,106 @@
   margin: 75px 0px 64px 38px;
 }
 
-.styledStrategiesList {
+.strategies-list {
   flex-direction: column;
   gap: 32px;
   max-width: 422px;
   margin: 0px 0px 72px 38px
 }
 
-.styledStrategiesListText {
+.strategies-list-font {
   font-family: 'ProximaNova', sans-serif;
   font-size: 16px;
   line-height: 26px;
   color: #FFFFFF;
 }
 
-.styledStrategiesListItem {
+.strategies-list-item {
   gap: 20px
 }
 
-.listIcone {
+.strategies-list-icon-wrapper {
   min-width: 24px;
   height: 24px;
 }
 
+/* -------------------------------------------------royalties section ---------------------------------- */
+
 @media only screen and (max-width:992px) {
 
-  .styledUnverifieFont,
-  .styledStrategiesFont,
-  .styledEleminatedFont {
+  .strategies-font,
+  .eleminated-font {
     font-size: 56px;
     line-height: 60px;
-    max-width: 249px;
-    height: 126px;
   }
 
-  .styledStrategiesSubFont {
+  .strategies-sub-font {
     font-size: 8px;
     line-height: 14px;
     max-width: 213px;
     margin: 42px 0px 38px 26px;
   }
 
-  .styledStrategiesList {
+  .strategies-list {
     max-width: 213px;
     gap: 12px;
     margin: 0px 0px 42px 26px;
   }
 
-  .styledStrategiesListText {
+  .strategies-list-font {
     font-size: 8px;
     line-height: 14px;
   }
 
-  .styledStrategiesListItem {
+  .strategies-list-item {
     gap: 8px
   }
 
-  .listIcone {
+  .strategies-list-icon-wrapper {
     min-width: 12px;
     height: 12px;
   }
 }
 
+
 @media only screen and (max-width:600px) {
 
-  .styledUnverifieFont,
-  .styledStrategiesFont,
-  .styledEleminatedFont {
+  .strategies-wrapper{
+    min-height: 480px;
+  }
+  .strategies-font,
+  .eleminated-font {
     font-size: 32px;
     line-height: 35px;
-    max-width: 150px;
-    height: 72px;
+  }
+
+  .strategies-container {
+    justify-content:flex-start;
+    padding-top: 22px;
+    z-index: 1;
+  }
+
+  .right-strategies-box {
+    position: relative;
+  }
+
+  .strategies-sub-font {
+    max-width: 295px;
+    font-size: 11px;
+    line-height: 18px;
+    position: absolute;
+    top:35%;
+    left:-95%;
+  }
+
+  .strategies-list {
+    max-width: 295px;
+    position: absolute;
+    top:70%;
+    left:-95%;
+  }
+
+  .strategies-list-item {
+    gap: 15px
   }
 }
