@@ -269,4 +269,48 @@
   .strategies-list-item {
     gap: 15px
   }
+
+  .royalties-wrapper::before {
+    content: none;
+  }
+
+  .royalties-background {
+  background-color:#FFF6F6;
+  justify-content: unset;
+  padding: 30px;
+  }
+
+  .royalties-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+  }
+
+  .royalties-content-wrapper {
+    margin-bottom: 0%;
+    min-width:226px;
+  }
+
+  .royalties-image-wrapper {
+    position: static;
+  }
+
+  .royalties-heading {
+    font-size: 28px;
+    line-height: 29px;
+  }
+
+  .royalties-description {
+    font-size: 10px;
+    line-height: 16px;
+  }
+
+  .royalties-image-wrapper {
+    max-width: 302px;
+    height: 185px;
+  }
+
+
+
 }
