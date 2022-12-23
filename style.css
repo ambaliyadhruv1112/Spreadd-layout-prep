@@ -1,7 +1,3 @@
-.root {
-  box-sizing: border-box;
-}
-
 @font-face {
   font-family: 'Brushter';
   src: url('/assets/font/brushter/Brushter.otf') format('truetype');
@@ -10,6 +6,16 @@
 @font-face {
   font-family: 'ProximaNova';
   src: url('/assets/font/proxiNova/ProximaNova-Regular.ttf') format('truetype');
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.root {
+  box-sizing: border-box;
+  font-family: 'ProximaNova', sans-serif;
 }
 
 .flex {
@@ -49,7 +55,6 @@
 }
 
 .strategies-font {
-  font-family: 'ProximaNova', sans-serif;
   font-size: 94px;
   line-height: 101px;
   color: rgba(255, 255, 255, 0.7);
@@ -68,7 +73,6 @@
 
 
 .strategies-sub-font {
-  font-family: 'ProximaNova', sans-serif;
   font-size: 16px;
   line-height: 26px;
   max-width: 422px;
@@ -84,7 +88,6 @@
 }
 
 .strategies-list-font {
-  font-family: 'ProximaNova', sans-serif;
   font-size: 16px;
   line-height: 26px;
   color: #FFFFFF;
@@ -100,6 +103,69 @@
 }
 
 /* -------------------------------------------------royalties section ---------------------------------- */
+
+.royalties-wrapper {
+  position: relative;
+}
+
+.royalties-wrapper::before {
+  content: "";
+  display: block;
+  background-image: url(assets/royaliteSVG.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 103px;
+  margin-top: 203px;
+}
+
+.royalties-background {
+  background-color:#FFF6F6;
+  justify-content: center;
+}
+
+.royalties-container {
+  min-width:895px;
+}
+
+.royalties-content-wrapper {
+  max-width: 330px;
+  margin-bottom: 104px;
+  flex-direction: column;
+  gap:24px;
+}
+
+.royalties-heading {
+  font-size: 42px;
+  line-height: 46px;
+}
+
+.royalties-description {
+  font-size: 14px;
+  line-height: 23px;
+}
+
+.royalties-image-wrapper {
+  max-width:55%;
+  position: absolute;
+  right: 0;
+  top:-75px;
+}
+
+.royalties-image {
+  object-fit: cover;
+}
+
+@media screen  and (min-width:1200px){
+  .royalties-image-wrapper {
+    width: 716px;
+    height:472px;
+  }
+
+  .royalties-background {
+    height: 300px;
+    padding: 40px;
+  }
+}
 
 @media only screen and (max-width:992px) {
 
@@ -134,6 +200,31 @@
   .strategies-list-icon-wrapper {
     min-width: 12px;
     height: 12px;
+  }
+
+  .royalties-wrapper::before {
+    height: 63px;
+    margin-top: 122px;
+  }
+
+  .royalties-container {
+    min-width:536px;
+  }
+
+  .royalties-content-wrapper {
+    max-width: 198px;
+    gap: 14px;
+    margin-bottom: 60px;
+  }
+
+  .royalties-heading {
+    font-size: 25px;
+    line-height: 28px;
+  }
+
+  .royalties-description{
+    font-size: 8px;
+    line-height: 14px;
   }
 }
 
