@@ -158,7 +158,10 @@
 /* ------------------------------------creators-section--------------------- */
 
 .creators-wrapper {
-  height: 1260px;
+    background-color:  #FFF6F6;
+    background: linear-gradient(0deg, rgba(255,213,213,1) 0%, rgba(255,246,246,1) 11%);
+    height: 820px;
+
 }
 
 .creators-background {
@@ -179,8 +182,9 @@
   background-image: url(assets/creatorsWave.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: bottom;
   display: block;
-  height: 104px;
+  height: 13%;
   margin-top: -2px;
 }
 
@@ -209,7 +213,7 @@
 .creators-matrix-wrapper {
   gap: 14px;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 6%;
 }
 
 .matrix-img-wrapper {
@@ -226,12 +230,41 @@
 .creators-profile-wrapper {
   width: 338px;
   height: 228px;
+  position: relative;
 }
 
+.creators-profile-wrapper::before {
+  content: "";
+  border-bottom: 1px dashed #FFFFFF;
+  display: block;
+  width: 40%;
+  height: 18%;
+  position: absolute;
+  right: -30%;
+
+}
+
+.creators-profile-wrapper::after {
+  content: "";
+  background-image: url(assets/creatorsVector.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  width: 40%;
+  height: 30%;
+  position: absolute;
+  right: -30%;
+  top: 55%;
+}
 .creators-store-wrapper{
   width: 430px;
   height: 261px;
+  z-index: 1;
 }
+
+
+/* ------------------------------------------courses-section----------------------------------- */
+
 
 @media screen  and (min-width:1200px){
   .royalties-image-wrapper {
@@ -305,9 +338,12 @@
     line-height: 14px;
   }
 
+  .creators-wrapper {
+    height: 490px;
+  }
   .creators-container{
     max-width: 520px;
-    padding: 52px;
+    padding: 52px 52px 0px;
     gap: 18px;
   }
 
@@ -429,6 +465,57 @@
   .royalties-image-wrapper {
     max-width: 302px;
     height: 185px;
+  }
+
+  .creators-wrapper {
+   background:#FFF6F6;
+   height: 664px;
+
+  }
+
+  .creators-container {
+    padding: 31px 33px 0px;
+  }
+
+  .creators-socialImg-wrapper {
+    flex-direction: column;
+    gap:22px;
+    width: 90%;
+    align-items: center;
+  }
+
+  .creators-profile-wrapper {
+    width: 240px;
+    height: 152px;
+  }
+
+  .creators-profile-wrapper::before {
+    content:none;
+  }
+
+  .creators-profile-wrapper::after {
+    content: none;
+  }
+
+  .creators-store-wrapper{
+    width: 270px;
+    height: 163px;
+
+  }
+
+  .creators-store-wrapper::before {
+    content: "";
+    border-left-style: dashed;
+    border-right-style: dashed;
+    border-color: #FF4E53;
+    border-width: 1px;
+    display: block;
+    width: 125px;
+    height: 13%;
+    position: absolute;
+    z-index: -1;
+    right: 33%;
+    top: 40%;
   }
 
 }
