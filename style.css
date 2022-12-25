@@ -480,6 +480,76 @@ line-height: 15px;
   border-radius: 33.3567px;
 }
 
+
+/* -----------------------------------------campaign section------------------------------------- */
+
+.campaign-wrapper {
+  height: 630px;
+  justify-content: center;
+  position: relative;
+}
+
+.campaign-cantainer {
+  width: 895px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.campaign-text-wrapper {
+  width: 40%;
+  flex-direction: column;
+  gap:10px;
+}
+
+.campaign-imgBox-wrapper{
+  width: 45%;
+  height: 446px;
+  gap: 4%;
+}
+
+.campaign-doubleimg-wrapper {
+  width: 48%;
+  height: 100%;
+  flex-direction: column;
+  gap: 4%;
+}
+
+.campaign-singleimg-wrapper {
+  width: 48%;
+  height: 100%;
+  align-items: center;
+  position: relative;
+}
+
+.campaign-dotVector-wrapper {
+  max-width: 45%;
+  height: 16%;
+  position: absolute;
+  top: 71%;
+  right: -14%;
+  z-index: -1;
+}
+
+.campaign-top-info-wrapper {
+  width: 45%;
+  height: max-content;
+  padding: 25px 20px 24px;
+  background: linear-gradient(90deg, #F06156 0%, rgba(240, 97, 86, 0.4) 98.89%);
+  position: absolute;
+  right: 0;
+  top: 78%;
+
+}
+
+.campaign-top-info-text{
+  max-width: 419.63px;
+  height: 44.6px;
+  font-size: 18px;
+    line-height: 20px;
+  color: #FFFFFF;
+}
+
+
 @media screen  and (min-width:1200px){
   .royalties-image-wrapper {
     width: 716px;
@@ -660,7 +730,27 @@ line-height: 15px;
    line-height: 9px;
   }
 
+  .campaign-wrapper {
+   height: 440px;
+ }
 
+ .campaign-cantainer {
+   max-width: 520px;
+ }
+
+ .campaign-imgBox-wrapper {
+   height: 268px;
+ }
+
+ .campaign-top-info-wrapper{
+  padding: 20px 20px 10px;
+  top: 75%;
+ }
+
+ .campaign-top-info-text {
+  font-size: 13px;
+  line-height: 15px;
+ }
 
 }
 
@@ -880,6 +970,31 @@ line-height: 15px;
     height: 32px;
     font-size: 9px;
    line-height: 9px;
+  }
+
+  .campaign-wrapper {
+    height: 720px;
+  }
+
+  .campaign-cantainer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: initial;
+    gap:40px;
+    padding: 44px 33px 0px;
+  }
+
+  .campaign-text-wrapper{
+    width: 100%;
+  }
+
+  .campaign-imgBox-wrapper {
+    width: 80%;
+    height: 306px;
+  }
+
+  .campaign-top-info-wrapper {
+   width: 80%;
   }
 
 }
