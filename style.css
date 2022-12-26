@@ -23,7 +23,8 @@
 }
 
 .btn {
-  width: 174.12px;
+  max-width: 174px;
+  width: 100%;
   height: 47.37px;
   font-size: 13.3427px;
   line-height: 15px;
@@ -53,6 +54,76 @@
 .font-color-black {
   color: black;
 }
+
+.collaborations-wrapper {
+  background-color: #F4F7F9;
+  justify-content: center;
+}
+
+.collaboration-container {
+  width: 895px;
+  margin-top: 160px;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 30px;
+  position: relative;
+
+}
+
+.collaboration-text-wrapper {
+  max-width: 48%;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.collaboration-explore-btn{
+  gap: 18px;
+  align-items: center;
+}
+
+.explore-icon-wrapper {
+  width: 34px;
+  height: 34px;
+}
+
+.collaboration-imgbox-wrapper {
+  max-width: 458px;
+  height:471px ;
+  justify-content: space-between;
+  position: absolute;
+  bottom: -40px;
+  right: -13%;
+}
+
+.collaboration-teamBondigimg-wrapper {
+  width: 45%;
+  position: relative;
+}
+
+.collaboration-teamworkimg-wrapper {
+  width: 45%;
+  position: relative;
+  top: 40px;
+}
+
+.collaboration-teamBondigimg-wrapper::after{
+  content: "";
+  background-image: url(assets/creatorsCount.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  position: absolute;
+  width: 170px;
+  height: 150px;
+  top: 70%;
+  right: -68px;
+  z-index: 1;
+}
+
+.network-wrapper {
+  height: 1010px;
+}
+
 
 .strategies-wrapper {
   position: relative;
@@ -557,6 +628,25 @@
     line-height: 14px;
   }
 
+  .collaboration-container {
+    margin-top: 96px;
+    max-width: 520px;
+  }
+
+  .collaboration-imgbox-wrapper {
+    height: 310px;
+    max-width: 280px;
+  }
+
+  .explore-icon-wrapper {
+    width: 20px;
+    height: 20px;
+  }
+
+  .collaboration-text-wrapper {
+    max-width: 51%;
+  }
+
   .strategies-font,
   .eleminated-font {
     font-size: 56px;
@@ -715,6 +805,32 @@
 
 @media only screen and (max-width:600px) {
 
+  .collaborations-wrapper {
+    height: 650px;
+    position: relative;
+  }
+
+  .collaborations-wrapper {
+    background: none;
+  }
+
+  .collaboration-container {
+    flex-direction: column;
+    align-items: unset;
+    margin-top: 0px;
+    padding: 44px 33px 0px;
+  }
+
+  .collaboration-imgbox-wrapper {
+    bottom: 0;
+    right: 0;
+    height: 335px;
+    max-width: 300px;
+  }
+
+  .collaboration-text-wrapper {
+    max-width: 100%;
+  }
   .sub-heading {
     font-size: 9px;
     line-height: 15px;
