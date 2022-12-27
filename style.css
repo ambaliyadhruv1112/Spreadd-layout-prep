@@ -92,7 +92,7 @@
   justify-content: space-between;
   position: absolute;
   bottom: -40px;
-  right: -13%;
+  right: -6%;
 }
 
 .collaboration-teamBondigimg-wrapper {
@@ -121,9 +121,68 @@
 }
 
 .network-wrapper {
-  height: 1010px;
+  align-items: center;
+  flex-direction: column;
 }
 
+.network-container {
+  max-width: 895px;
+  padding-top: 160px;
+  padding-bottom: 106px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.network-image-wrapper {
+  width: 54%;
+}
+
+.network-text-wrapper {
+  flex-direction: column;
+  width: 38%;
+  gap: 10px;
+}
+
+.players-wrapper {
+  max-width: 990px;
+  margin-bottom: 106px;
+  justify-content: space-between;
+}
+
+.players-textBox-wrapper {
+  max-width: 35%;
+}
+
+.players-textStart-border {
+  width: 14%;
+  border-bottom: 4px solid #FF4E53;
+  border-radius: 5px;
+  margin-bottom: 12px;
+
+}
+
+.players-text-wrapper {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 29px;
+}
+
+.players-logo-wrapper {
+  max-width: 55%;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.logo-wrapper {
+  width: 150px;
+  height: 43px;
+}
+
+.logo-size {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 
 .strategies-wrapper {
   position: relative;
@@ -646,6 +705,24 @@
   .collaboration-text-wrapper {
     max-width: 51%;
   }
+.network-container {
+  padding-top: 96px;
+  max-width: 520px;
+}
+
+.players-wrapper {
+  max-width: 595px;
+}
+
+.players-text-wrapper {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.logo-wrapper {
+  width: 90px;
+  height: 20px;
+}
 
   .strategies-font,
   .eleminated-font {
@@ -831,6 +908,7 @@
   .collaboration-text-wrapper {
     max-width: 100%;
   }
+
   .sub-heading {
     font-size: 9px;
     line-height: 15px;
@@ -845,7 +923,51 @@
     font-size: 10px;
     line-height: 16px;
   }
+.network-wrapper {
+  align-items: unset;
+  padding: 87px 33px 0px;
+}
 
+.network-container {
+  width: 100%;
+  flex-direction: column-reverse;
+  align-items: unset;
+  padding-bottom: 40px;
+  gap: 40px;
+}
+
+.network-text-wrapper {
+  width: 100%;
+  max-width: 239px;
+}
+
+.players-textBox-wrapper {
+  max-width: 75%;
+}
+
+.players-text-wrapper {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.network-image-wrapper {
+  width: 100%;
+}
+
+.players-wrapper {
+  flex-direction: column;
+  gap: 35px;
+  margin-bottom: 52px;
+}
+
+.players-logo-wrapper {
+  max-width: none;
+  gap: 22px;
+}
+
+.logo-wrapper {
+  width: 80px;
+}
   .strategies-wrapper{
     min-height: 480px;
   }
